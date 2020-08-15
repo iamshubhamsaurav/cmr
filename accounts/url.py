@@ -5,5 +5,5 @@ urlpatterns = [
     # url(r'^admin/', admin.site.urls),
     path('', views.home),
     path('products/', views.products),
-    path('customers/', views.customers)
+    path('customers/<str:pk>', views.customers)
 ]
